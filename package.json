@@ -1,0 +1,16 @@
+{
+  "name": "adote-animal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:felipprodrigues/adote-animal.git",
+  "author": "felipprodrigues <dev.rodriguesfelipp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "harp server _src",
+    "build": "harp compile _src"
+  },
+  "dependencies": {
+    "harp": "^0.33.0",
+    "scripts": "^0.1.0"
+  }
+}
