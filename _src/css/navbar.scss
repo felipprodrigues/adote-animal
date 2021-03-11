@@ -1,19 +1,15 @@
 .navbar {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
-  height: 125px;
+  height: 25%;
   background: lightsalmon;
-
 
   &__list {
     display: inline-flex;
     justify-content: flex-end;
-    width: 100%;
-    height: 20px;
-    margin-top:50px;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     color: white;
     list-style-type: none;
     margin: 0;
@@ -29,16 +25,14 @@
     color: white;
     padding: 5px;
   
-  
     &:hover {
       color:lightgrey;
     }
   }
 
   &__title {
-    height: 50px;
+    text-align: center;
     color: white;
-
     font-size: 50px;
     margin: 0;
   }
