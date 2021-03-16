@@ -1,0 +1,66 @@
+.banner{
+  height:100%;
+  width: 100%;
+  
+  &__blue{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: lightblue;
+    border-bottom: solid 5px grey;
+  }
+
+  &__left{
+    display:flex;
+    width: 25%;
+    height: 100%;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image{
+      color: white;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      border: 3px solid white;
+      border-radius: 100%;
+  }
+    
+  &__text{
+    display:flex;
+    height: 100%;
+    max-height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0 10%;
+  }
+
+  &__paragraph{
+    display: inline;
+  }
+
+  &__pink{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 400px;
+    width: 100%;
+    background-color: lightpink;
+    border-bottom: solid 5px grey;
+  }
+  
+  &__right{
+    display:flex;
+    width: 25%;
+    height: 100%;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+  
+
