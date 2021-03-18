@@ -1,12 +1,23 @@
+.section{
+  background-color: lightblue;
+}
+
+.section--reverse{
+  flex-direction: row-reverse;
+  background-color: lightpink;
+}
+
 .section,
 .section--reverse{
   display: flex;
   justify-content: space-around;
   height: 85vh;
+
   &__side{
     display:flex;
     align-items: center;
   }
+
   &__image{
     color: white;
     display:flex;
@@ -17,18 +28,13 @@
     border: 3px solid white;
     border-radius: 100%;
   }
+
   &__text{
     display:flex;
     align-items: center;
   }
+  
   &__paragraph{
     width: auto;
   }
 }
-.section{
-  background-color: lightblue;
-}
-.section--reverse{
-  flex-direction: row-reverse;
-  background-color: lightpink;
-  }

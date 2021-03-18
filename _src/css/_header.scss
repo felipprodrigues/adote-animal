@@ -1,4 +1,4 @@
-.navbar {
+.header {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -6,27 +6,29 @@
   height: 25%;
   background: lightsalmon;
 
-  &__list {
+  &__navbar {
     display: inline-flex;
     justify-content: flex-end;
     padding: 10px 20px;
     color: white;
     list-style-type: none;
     margin: 0;
-  }
 
-  &__item {
-    margin: 0 10px;
-  }
+    .navbar{ 
+      &__item {
+        margin: 0 10px;
+      }
 
-  &__link {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    padding: 5px;
-  
-    &:hover {
-      color:lightgrey;
+      &__link {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px;
+      
+        &:hover {
+          color:lightgrey;
+        }
+      }
     }
   }
 

@@ -1,22 +1,24 @@
 .container
-  nav.navbar
-    ul.navbar__list
+  header.header
+    ul.header__navbar.navbar
       li.navbar__item
         a.navbar__link(href="#") Menu
       li.navbar__item 
-        a.navbar__link(href="#") Sobre
+        a.navbar__link(href="#section") Section 1
+      li.navbar__item 
+        a.navbar__link(href="#section--reverse") Section 2
       li.navbar__item 
         a.navbar__link(href="#") Contato
-    h1.navbar__title Projeto Cachorro
-    section#section.section
-      .section__side
-        p.section__image Imagem
-      .section__text 
-        p.section__paragraph Only the strongest will survive   Lead me to heaven, when we die   I am the shadow on the wall   I'll be the one to save us all
-    section.section--reverse 
-      .section__side
-        p.section__image Imagem 
-      .section__text
-        p.section__paragraph Do or die, you'll never make me Because the world will never take my heart Go and try, you'll never break me We want it all, we wanna play this part
-          
+    h1.header__title Projeto Cachorro
+
+  #section.section
+    .section__side
+      p.section__image Imagem
+    .section__text 
+      p.section__paragraph Only the strongest will survive   Lead me to heaven, when we die   I am the shadow on the wall   I'll be the one to save us all
+  #section--reverse.section--reverse 
+    .section__side
+      p.section__image Imagem 
+    .section__text
+      p.section__paragraph Do or die, you'll never make me Because the world will never take my heart Go and try, you'll never break me We want it all, we wanna play this part
 
