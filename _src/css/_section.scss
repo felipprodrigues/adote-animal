@@ -13,18 +13,18 @@
   justify-content: space-around;
   height: 85vh;
 
-.section__side:hover .section__image{
-    opacity: 0.3;
-}
-  
-.section__side:hover .section__effect{
-    opacity: 1;
-}
-
-  &__side{
+  &__box{
     position: relative;
     display:flex;
     align-items: center;
+  }
+
+  &__box:hover .section__image{
+    opacity: 0.3;
+  }
+  
+  &__box:hover .section__box--invisible{
+    opacity: 1;
   }
 
   &__image{
@@ -38,7 +38,7 @@
     backface-visibility: hidden;
   }
 
-  &__effect{
+  &__box--invisible{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,12 +49,12 @@
     text-align: center;
   }
 
-  &__card{
+  &__text{
     color: white;
     font-size: 45px;
   }
 
-  &__text{
+  &__content{
     display:flex;
     align-items: center;
   }
