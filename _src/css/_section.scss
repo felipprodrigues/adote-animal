@@ -25,7 +25,7 @@
     opacity: 0.3;
   }
   
-  &__box:hover .section__box--invisible{
+  &__box:hover .section__text{
     opacity: 1;
   }
 
@@ -36,13 +36,10 @@
     transition: all .5s ease;
   }
 
-  &__box--invisible{
+  &__text{
     position: absolute;
     transition: .5s ease;
     opacity: 0;
-  }
-
-  &__text{
     color: white;
     font-size: 45px;
   }
