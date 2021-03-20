@@ -13,20 +13,45 @@
   justify-content: space-around;
   height: 85vh;
 
+.section__side:hover .section__image{
+    opacity: 0.3;
+}
+  
+.section__side:hover .section__effect{
+    opacity: 1;
+}
+
   &__side{
+    position: relative;
     display:flex;
     align-items: center;
   }
 
   &__image{
-    color: white;
+    opacity: 1;
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
-    border: 3px solid white;
-    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  &__effect{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__card{
+    color: white;
+    font-size: 45px;
   }
 
   &__text{
@@ -38,3 +63,6 @@
     width: auto;
   }
 }
+
+
+
