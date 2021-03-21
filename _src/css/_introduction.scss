@@ -1,5 +1,21 @@
 .introduction{
-    height:40vh;
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px 150px;
     background-color: lightgray;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
 }
+
+
+

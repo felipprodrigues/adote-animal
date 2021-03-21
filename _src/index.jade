@@ -13,17 +13,26 @@
       img.header__image(src="/assets/dogface.png")
 
   #introduction.introduction
-    svg
-      use(xlink:href="assets/defs.svg#icon-protective")
-    svg
-      use(xlink:href="assets/defs.svg#icon-pethome")
-    svg
-      use(xlink:href="assets/defs.svg#icon-petfood")
-    svg
-      use(xlink:href="assets/defs.svg#icon-petreport")
-    svg
-      use(xlink:href="assets/defs.svg#icon-petvaccine")
-
+    .introduction__box
+      svg
+        use(xlink:href="assets/defs.svg#icon-protective")
+      .introduction__content Adoção
+    .introduction__box
+      svg
+        use(xlink:href="assets/defs.svg#icon-pethome")
+      .introduction__content Casa
+    .introduction__box 
+      svg
+        use(xlink:href="assets/defs.svg#icon-petfood")
+      .introduction__content Comida
+    .introduction__box
+      svg
+        use(xlink:href="assets/defs.svg#icon-petreport")
+      .introduction__content Saúde
+    .introduction__box
+      svg
+        use(xlink:href="assets/defs.svg#icon-petvaccine")
+      .introduction__content Vacina
 
   #section.section
     .section__box
