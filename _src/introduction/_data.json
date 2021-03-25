@@ -1,0 +1,27 @@
+{
+  "description-1": {
+    "icon": "protective",
+    "title": "Adoção",
+    "info": "Cachorro com comida"
+  },
+  "description-2": {
+    "icon": "pethome",
+    "title": "Casa",
+    "info": "Cachorro protegido"
+  },
+  "description-3": {
+    "icon": "petfood",
+    "title": "Comida",
+    "info": "Cachorro perneta"
+  },
+  "description-4": {
+    "icon": "petreport",
+    "title": "Saúde",
+    "info": "Cachorro sem pai"
+  },
+  "description-5": {
+    "icon": "petvaccine",
+    "title": "Vacina",
+    "info": "Cachorro drogado"
+  }
+}
