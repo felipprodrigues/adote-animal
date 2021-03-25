@@ -1,5 +1,20 @@
 .introduction{
-    height:40vh;
-    width: 100%;
+    display: flex;
+    padding: 200px 150px;
     background-color: lightgray;
+
+    &__box{
+        display: flex;
+        width: calc(100% / 5);
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__text {
+        width: 85%;
+        
+    }
 }
+
+
+

@@ -19,8 +19,20 @@ h4,
 h5,
 h6 {
   font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 5px ;
 }
 
 p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.2em;
+}
+
+svg {
+  height: 100px;
+  width: 100px;
+}
+
+hr {
+  width:30px;
+  border: 1px solid gray;
 }
