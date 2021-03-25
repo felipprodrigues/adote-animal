@@ -1,20 +1,19 @@
 .introduction{
     display: flex;
-    justify-content: space-evenly;
     padding: 200px 150px;
     background-color: lightgray;
 
     &__box{
         display: flex;
+        width: calc(100% / 5);
+        align-items: center;
         flex-direction: column;
     }
 
-    &__content{
-        font-size: 30px;
-        text-align: center;
-        padding-top: 15px;
+    &__text {
+        width: 85%;
+        
     }
-
 }
 
 
