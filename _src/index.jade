@@ -12,41 +12,12 @@
     .header__frame 
       img.header__image(src="/assets/dogface.png")
 
-  #introduction.introduction
-    .introduction__box
-      svg.introduction__image
-        use(xlink:href="assets/defs.svg#icon-protective")
-      h4.introduction__title Adoção
-      hr
-      p.introduction__text bla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla bl
-    .introduction__box
-      svg.introduction__image
-        use(xlink:href="assets/defs.svg#icon-pethome")
-      h4.introduction__title Casa
-      hr
-      p.introduction__text bla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla bl
-    .introduction__box 
-      svg.introduction__image
-        use(xlink:href="assets/defs.svg#icon-petfood")
-      h4.introduction__title Comida
-      hr
-      p.introduction__text bla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla bl
-    .introduction__box
-      svg.introduction__image
-        use(xlink:href="assets/defs.svg#icon-petreport")
-      h4.introduction__title Saúde
-      hr
-      p.introduction__text bla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla bl
-    .introduction__box
-      svg.introduction__image
-        use(xlink:href="assets/defs.svg#icon-petvaccine")
-      h4.introduction__title Vacina
-      hr
-      p.introduction__text bla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla blbla bl
+    #introduction.introduction
+      != partial("introduction/_introduction")
 
   #section.section
     .section__box
-      img.section__image(src="assets/pngkey.com-dog-head-png-8591394.png")
+      img.section__image(src="assets/doge.png")
       span.section__text Doge
     
     .section__content 
