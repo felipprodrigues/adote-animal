@@ -1,17 +1,20 @@
 Camelias Services
 
-This project is built with harp
-Getting started
+This project is built with harp Getting started
 
-    Setup:
-        Yarn - You may use Yarn
-        yarn - To install the dependencies
+Setup:
 
-    Running:
-        yarn dev => starts the server on localhost:3000/
+    Yarn - You may use Yarn
+    yarn - To install the dependencies
 
-    Build:
-        yarn build => compiles the files to get ready to deploy
+Running:
 
-    Deploy:
-        yarn build, commit the changes on master including the generated files on docs folder and push to Github
+    yarn dev => starts the server on localhost:3000/
+
+Build:
+
+    yarn build => compiles the files to get ready to deploy
+
+Deploy:
+
+    yarn build, commit the changes on master including the generated files on docs folder and push to Github
