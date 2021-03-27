@@ -10,22 +10,21 @@
 .section,
 .section--reverse{
   display: flex;
-  justify-content: space-around;
   height: 85vh;
+  justify-content: space-around;
 
   &__box{
-    width: 850px;
     border: 5px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__box:hover .section__image{
+  &__image:hover{
     opacity: 0.3;
   }
   
-  &__box:hover .section__text{
+  &__image:hover ~.section__text /*this makes the effect disappear when the mouse hovers over text*/{
     opacity: 1;
   }
 
@@ -51,6 +50,17 @@
   
   &__paragraph{
     width: auto;
+  }
+
+  &__status{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__item{
+    border: 2px solid black;
+    margin: 25px 0px;
   }
 }
 

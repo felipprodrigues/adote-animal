@@ -12,21 +12,34 @@
     .header__frame 
       img.header__image(src="/assets/dogface.png")
 
-    #introduction.introduction
-      != partial("introduction/_introduction")
+  #introduction.introduction
+    != partial("introduction/_introduction")
 
+<<<<<<< Updated upstream
   #section.section
     .section__box
       img.section__image(src="assets/doge.png")
       span.section__text Doge
-    
     .section__content 
       p.section__paragraph Only the strongest will survive Lead me to heaven,  when we die   I am the shadow on the wall   I'll be the one to save us all
-  
+    .section__status
+      svg.section__item
+        use(xlink:href="assets/defs.svg#icon-petvaccine")
+      svg.section__item
+        use(xlink:href="assets/defs.svg#icon-pethome")
   #section--reverse.section--reverse 
     .section__box
       img.section__image(src="assets/dogola.png")
       span.section__text Imperador Cão
     .section__content 
       p.section__paragraph Do or die, you'll never make me Because the world will never take my heart Go and try, you'll never break me We want it all, we wanna play this part
-
+    .section__status
+      svg.section__item
+        use(xlink:href="assets/defs.svg#icon-protective")
+      svg.section__item
+        use(xlink:href="assets/defs.svg#icon-petreport")
+=======
+  .body
+    != partial("body/_body")
+    
+>>>>>>> Stashed changes
