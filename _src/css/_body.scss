@@ -1,0 +1,25 @@
+.body {
+  min-height: 100%;
+  background-color: #d3d3d3;
+  padding: 125px 100px;
+
+  &__wrapper {
+    width: 100%;
+    padding: 0 150px;
+    display: flex;
+  }
+
+  &__card {
+    height: 300px;
+    background-color: #a9a9a9;
+    border: 1px solid #000;
+    margin: 25px;
+    width: 50%;
+    display: flex;
+
+  }
+
+}
+
+
+
