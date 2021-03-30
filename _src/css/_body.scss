@@ -10,7 +10,7 @@
   }
 
   &__card {
-    height: 300px;
+    height: 250px;
     background-color: #a9a9a9;
     border: 1px solid #000;
     margin: 25px;
@@ -20,26 +20,45 @@
 
   &__frame {
     display: flex;
-    align-items: center;
-    padding-left:25 px;
-  }
-  
-  &__border {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    position: relative;
   }
 
-  &__line{
+  &__frame::after{
     content: "";
+    position: absolute;
     background-color: gray;
     width: 2px;
     height: 100px;
-    margin: 0 75px;
+    left: 110%;
+    top: 40px;
+  }
+  
+  &__image{
+    height: 150px;
+    width: 150px;
+  }
+
+  &__bar{
+    display: flex;
+    justify-content: center;
+    margin: 20%;
+  }
+  
+  &__svg{
+    width: 25px;
+    height: 25px;
   }
 
   &__content {
-    padding-top: 25px;
+    margin: 50px;
   }
+
+  &__text{
+    font-size: 13px;
+  }
+
+
 
 }
 
