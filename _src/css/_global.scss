@@ -36,3 +36,10 @@ hr {
   width:30px;
   border: 1px solid gray;
 }
+
+/*this line also affected the header image*/
+
+img {
+  max-width: 175px;
+  max-height: 175px;
+}
