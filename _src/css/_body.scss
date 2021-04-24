@@ -17,13 +17,8 @@
     box-shadow: 3px 2px 10px 0 white;
     margin: 25px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     border-radius: 2%;
-  }
-
-  &__info{
-    display:flex;
-    height: 90%;
   }
 
   &__frame {
@@ -33,80 +28,39 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    bottom: 15px;
   }
 
-  &__frame::after{
-    content: "";
-    position: absolute;
-    background-color:gray;
-    width: 1px;
-    height: 50px;
-    left: 160px;
-    top: 100px;
-  }
   
   &__image{
     background-color: blanchedalmond;
-    border: grey 2px solid;
+    border: lightgrey 3px solid;
     border-radius: 50%;
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
   }
 
   &__content {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
   }
 
   &__title{
+    font-size: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   &__text{
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 13px;
-    margin: 30px;
     text-align: justify;
   }
 
-  /*couldn't get to make the collapse element fit in the card radius*/
-
-  &__collapse{
-    height: 10%;
-    background-color: rgba(0, 0, 0, 0.856);
-    border-radius: 2%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: grey solid 1px;
-    transition: all 0.4s;
-  }
-
-  &__collapse:hover{
-    background-color: white;
-    cursor: pointer;
-    transition: all 0.4s;
-  }
-
-  &__icon{
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 11px solid whitesmoke;
-  }
-
 }
 
-.body__collapse:hover .body__icon{
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 11px solid rgba(0, 0, 0, 0.856);
-  transition: all 0.4s;
-}
 
