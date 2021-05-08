@@ -1,5 +1,3 @@
-Camelias Services
-
 This project is built with harp Getting started
 
 Setup:
