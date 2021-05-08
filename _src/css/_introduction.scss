@@ -3,16 +3,43 @@
     padding: 200px 150px;
     background-color: #efdfdf;
 
+    @media screen and (max-width: $mobile-up) {
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $mobile){
+        background-color: lightcyan
+    }
+
+    @media screen and (min-width: $web){
+        background-color: yellow
+    }
+
+
+
     &__box{
         display: flex;
         width: calc(100% / 5);
         align-items: center;
         flex-direction: column;
+
+        @media screen and (max-width: $mobile-up) {
+            margin-bottom: 15px;
+            width: calc(100% / 2);
+            margin-top: 100px
+        }
+        
     }
 
     &__text {
         width: 85%;
         
+        @media screen and (max-width: $mobile-up) {
+            width: 50%;
+            text-align: center;
+        }
     }
 }
 
