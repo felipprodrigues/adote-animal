@@ -2,12 +2,27 @@
   min-height: 100%;
   background-color: #d3d3d3;
   padding: 125px 100px;
+  @media screen and (max-width: $mobile-up) {
+    padding: 125px 30px;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $web) {
+    padding: 125px 30px;
+  }
 
   &__wrapper {
     width: 100%;
     padding: 0 150px;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: $mobile-up) {
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+    }
+    @media screen and (min-width: $mobile) and (max-width: $web) {
+      align-items: center;
+      padding: 0px;
+    }
   }
 
   &__card {
@@ -19,6 +34,10 @@
     display: flex;
     justify-content: space-around;
     border-radius: 2%;
+    @media screen and (max-width: $mobile-up) {
+      width: 100%;
+      margin: 25px;
+    }
   }
 
   &__frame {
