@@ -1,25 +1,15 @@
 .body {
   min-height: 100%;
   background-color: #d3d3d3;
-  padding: 125px 100px;
-  @media screen and (max-width: $mobile-up) {
-    padding: 125px 30px;
-  }
-  @media screen and (max-width: $web) {
-    padding: 125px 30px;
-  }
+  padding: 125px 0px;
 
   &__wrapper {
     width: 100%;
-    padding: 0 150px;
+    padding: 0 50px;
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $mobile-up) {
-      flex-direction: column;
-      align-items: center;
-      padding: 0px;
-    }
     @media screen and (max-width: $web) {
+      flex-direction: column;
       align-items: center;
       padding: 0px;
     }
@@ -55,7 +45,7 @@
     border: lightgrey 3px solid;
     border-radius: 50%;
     height: 120px;
-    width: 120px;
+    width: 92%;
   }
 
   &__content {
@@ -71,11 +61,9 @@
   }
 
   &__text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 13px;
     text-align: justify;
+    overflow: scroll;
   }
 
 }
