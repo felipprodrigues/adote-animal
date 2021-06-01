@@ -1,19 +1,86 @@
 .navbar { 
   margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $web){
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 0;
+    height: 300px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
   
   &__item {
     margin: 0 10px;
     list-style-type: none;
+    @media screen and (max-width: $web){
+      margin:0;
+    }
   }
+
 
   &__link {
     text-decoration: none;
     font-size: 24px;
     color: white;
     padding: 5px;
+        @media screen and (max-width: $web){
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
   
     &:hover {
       color:lightgrey;
     }
   }
+
+  &__closebtn{
+    visibility: hidden;
+    @media screen and (max-width: $web){
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: #818181;
+      &:hover {
+        color:lightgrey;
+      }
+    }
+  }
 }
+
+.openbtn {
+  visibility: hidden;
+  @media screen and (max-width: $web){
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    visibility:visible;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightsalmon;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    }
+    &:hover {
+      color: #444;
+    }
+}
+
