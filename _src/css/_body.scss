@@ -24,13 +24,10 @@
     display: flex;
     justify-content: space-around;
     border-radius: 2%;
-    @media screen and (max-width: $mobile-up) {
-      width: 90%;
-      height: 300px;
-    }
     @media screen and (max-width: $web) {
+      flex-direction: column;
       width: 80%;
-      height: 300px;
+      height: 350px;
     }
   }
 
@@ -41,8 +38,9 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: $mobile-up) {
-      width: 35%;
+    @media screen and (max-width: $web) {
+      width: 100%;
+      height: 40%;
     }
   }
 
@@ -54,7 +52,11 @@
     height: 60%;
     width: 92%;
     @media screen and (max-width: $web) {
-      height: 45%;
+      height: 100%;
+      width: 85%;
+      border-radius: 0;
+      border: 0px;
+      box-shadow: grey 0px 1px 3px;
     }
   }
 
@@ -62,8 +64,10 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: $mobile-up) {
-      width: 50%;
+    @media screen and (max-width: $web) {
+      justify-content: center;
+      width: 100%;
+      padding: 0px 10px;
     }
   }
 
@@ -71,6 +75,9 @@
     font-size: 25px;
     display: flex;
     justify-content: flex-start;
+    @media screen and (max-width: $web) {
+      justify-content: center;
+    }
   }
 
   &__text{
