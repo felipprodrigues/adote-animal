@@ -63,24 +63,23 @@
       }
     }
   }
+  &__openbtn {
+    visibility: hidden;
+    @media screen and (max-width: $web){
+      display: flex;
+      visibility:visible;
+      font-size: 45px;
+      cursor: pointer;
+      background-color: lightsalmon;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      }
+      &:hover {
+        color: #444;
+      }
+  }
+  
 }
 
-.openbtn {
-  visibility: hidden;
-  @media screen and (max-width: $web){
-    display: flex;
-    justify-content: flex-start;
-    width: 20%;
-    visibility:visible;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: lightsalmon;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    }
-    &:hover {
-      color: #444;
-    }
-}
 
