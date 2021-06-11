@@ -1,6 +1,8 @@
+
 .container
   header.header
-    nav.header__navbar.navbar
+    #mySidepanel.nav.header__navbar.navbar
+      a(href="javascript:void(0)" class="navbar__closebtn" onclick="closeNav()") &times;
       li.navbar__item
         a.navbar__link(href="#") Menu
       li.navbar__item 
@@ -9,8 +11,11 @@
         a.navbar__link(href="#section--reverse") Cachorro Rei
       li.navbar__item 
         a.navbar__link(href="#") Contato
+    button(class="navbar__openbtn" onclick="openNav()") &#9776;
     .header__frame 
       img.header__image(src="/assets/dogface.png")
+
+
 
   #introduction.introduction
     != partial("introduction/_introduction")

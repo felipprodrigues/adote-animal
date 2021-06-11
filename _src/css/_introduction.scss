@@ -4,30 +4,41 @@
     background-color: #efdfdf;
     
     @media screen and (max-width: $mobile-up) {
-        display: flex;
-        padding: 0;
+        flex-direction: column;
+        padding: 200px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: $web){
+        padding: 200px 0px;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width: $mobile){
-        background-color: lightcyan
-    }
-
-    @media screen and (min-width: $web){
-        background-color: yellow
-    }
 
     &__box{
         display: flex;
         width: calc(100% / 5);
         align-items: center;
         flex-direction: column;
+        @media screen and (max-width: $mobile-up) {
+            width: 100%;
+        }
+        @media screen  and (max-width: $web){
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+        }
     }
 
     &__text {
         width: 85%;
-        
-    }
+        @media screen and (max-width: $mobile-up) {
+            width: 80%;
+        }
+    }  
 }
 
 
